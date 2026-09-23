@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10% 할인 이벤트</title>
+    <title>STEPUP SHOES</title>
 
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             background: #f5f5f5;
-            margin: 0;
-            padding: 40px 20px;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
             text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #cccccc;
         }
 
         .product {
-            background: white;
+            width: 90%;
             max-width: 500px;
-            margin: auto;
-            padding: 30px;
+            margin: 40px auto;
+            padding: 25px;
+            background: white;
             border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
         }
 
         .product-image {
             width: 100%;
             max-width: 350px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 12px;
         }
 
-        h1 {
-            font-size: 28px;
-        }
-
         h2 {
+            font-size: 25px;
             margin-top: 25px;
         }
 
@@ -46,29 +65,34 @@
             color: #e53935;
             font-size: 32px;
             font-weight: bold;
+            margin: 10px 0;
         }
 
         .discount {
-            color: #e53935;
-            font-size: 20px;
+            display: inline-block;
+            background: #e53935;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
             font-weight: bold;
         }
 
         .description {
             color: #555;
             line-height: 1.6;
+            margin: 20px 0;
         }
 
         #test-button {
+            width: 100%;
+            padding: 16px;
             background: #111;
             color: white;
             border: none;
-            padding: 16px 40px;
+            border-radius: 8px;
             font-size: 18px;
             font-weight: bold;
-            border-radius: 8px;
             cursor: pointer;
-            margin-top: 15px;
         }
 
         #test-button:hover {
@@ -79,15 +103,17 @@
 
 <body>
 
-    <div class="product">
+    <header>
+        <h1>STEPUP SHOES</h1>
+        <p>Premium Sneakers Collection</p>
+    </header>
 
-        <h1>특별 할인 이벤트</h1>
+    <div class="product">
 
         <img
             class="product-image"
-            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700"
-            alt="프리미엄 운동화"
-        >
+            src="KakaoTalk_20260923_142259472.jpg"
+            alt="프리미엄 운동화">
 
         <h2>프리미엄 운동화</h2>
 
@@ -95,10 +121,11 @@
 
         <p class="sale-price">₩90,000</p>
 
-        <p class="discount">10% 할인</p>
+        <span class="discount">10% 할인</span>
 
         <p class="description">
-            지금 구매하시면 특별 할인 혜택을 받을 수 있습니다.
+            편안하고 스타일리시한 프리미엄 운동화입니다.<br>
+            지금 구매하시면 10% 할인 혜택을 받을 수 있습니다.
         </p>
 
         <button id="test-button">
